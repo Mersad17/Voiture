@@ -1,0 +1,363 @@
+*{ 
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+.icon{
+	display: none;
+}
+.head{
+	display: flex;
+	background-color: black;
+	border-bottom:1px solid orange;
+}
+
+.logo{
+	display: block;
+	width: 100%;
+	height: auto;
+	width: 200px;
+	max-width:100%;
+	margin-left:7%;
+}
+.head p{
+	display: inline-block;
+	color: white;
+	height: auto;
+	padding-top: 42px;
+}
+.dlogin{
+	display: flex;
+	float: right;
+	align-self: center;
+	display: inline;
+	position: absolute;
+	right: 20px;
+}
+.dlogin a{
+	padding:9px;
+}
+
+/*Navbar*/
+#barrenav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    background-color: black;
+    width: 100%;
+}
+
+#barrenav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*contact animation*/
+#barrenav a:hover {
+    color: #F69249
+}
+#buttonNav  span{
+	position: relative;
+	z-index: 1;
+	color:#fff;
+	font-size: 20px;
+	letter-spacing: 8px;
+	text-decoration: none;
+	
+}
+#buttonNav{
+	overflow: hidden;
+	position: relative;
+	right: 90px;
+	text-decoration:none;
+}
+#buttonNav .liquid{
+	position: absolute;
+	left: 0;
+	top: -45px;
+	width: 140px;
+	height: 100px;
+	background:#4973ff;
+	box-shadow: inset 0 0 50px rgba(0,0,0,.5);
+	transition: 0.5s;
+}
+#buttonNav .liquid:hover{
+	background-color: blue;
+}
+#buttonNav .liquid:before,
+#buttonNav .liquid:after{
+	content: '';
+	position: absolute;
+	width: 200%;
+	height: 220%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,-75%);
+
+
+}
+
+#buttonNav .liquid:before{
+	border-radius: 85%;
+	background-color: rgba(0,0,0,1);
+	animation:animate 4s linear infinite;
+}
+@keyframes animate{
+	0%{
+		transform: translate(-50%,-75%) rotate(0deg);
+	}
+	100%{
+		transform: translate(-50%,-75%) rotate(180deg);
+	}
+}
+#buttonNav .liquid:after
+{
+	border-radius: 80%;
+	background-color: rgba(20,20,20,0.5);
+		animation:animate 6s linear infinite;
+}
+
+
+
+/*background voiture*/
+.backgroundvoiture {
+	color: red;
+	background-image: url(./Background.jpg);
+	
+	 height:120vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.text {
+	margin-left: 14%;
+	width: 78%;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 1300px;
+    color: #000;
+    text-align: left;
+    font-family: Roboto ,sans-serif;
+    color: white;
+}
+
+.text p {
+    font-size: 24px;
+
+}
+/*sidenavbar*/
+.sidenavbar{
+
+	position: sticky;
+	top: 38%;
+	transform: translateY(-50%);
+}
+.sidenavbar a{
+	display: block;
+	text-decoration: none;
+	background-color: black;
+	color: orange;
+	text-transform: uppercase;
+	padding: 15px 0 15px 10px;
+	width: 250px;
+	letter-spacing: 1,5px;
+	position: relative;
+	margin-left: -199px;
+	transition: 0.7s ease;
+}
+.sidenavbar a span{
+	float: right;
+	width: 70px;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	background-color: #E2E2C4;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.sidenavbar a span i{
+	font-size: 20px;
+
+}
+.sidenavbar a:hover{
+	margin-left: 0;
+	text-decoration: none;
+	color: orange;
+
+}
+/*Carousel*/
+.sectionCarousel{
+	margin-top: -271px;
+	display: flex;
+	background-color: black;
+	flex-flow: column wrap;
+}
+.blackh{
+	color: black;
+
+}
+.DESIGN{
+	order: 1;
+	color: white;
+	text-align: center;
+	width: 60%;
+	margin: 60px auto;
+}
+.DESIGN hr{
+	border-bottom: 1px solid orange;
+	width: 23%;
+	display: inline-block;
+}
+.divCarousel{
+	order: 2;
+	padding-top: 20px;
+	width: 63%;
+	margin:0 auto;
+	max-height: 500px;
+	transition: all 0.3s ease 0s;
+	margin-bottom: 20px;
+}
+.divCarousel img{
+	max-height: 432px;
+	
+}
+
+
+/* Comfort*/
+.section{
+	padding-left: 30px;
+	display: flex;
+	background-color: black;
+	flex-flow: column wrap;
+	color: white;
+}
+.section hr{
+	border-bottom: 1px solid orange;
+	width: 23%;
+	display: inline-block;
+
+}
+.Comfort{
+	order: 1;
+	color: white;
+	text-align: center;
+	width: 70%;
+	margin: 60px auto;
+}
+.Comfortline{
+	order: 2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  	align-items: center;
+}
+.ComfortlineIMG{
+	order: 1;
+	width: 45%;
+	margin: auto;
+}
+.ComfortlineIMG img{
+	width:100%;
+  
+}     
+.ComfortlineP{
+	margin: auto;
+	order: 2;
+	width: 46%;
+}
+/*Securite*/
+.securite{
+	order: 1;
+	text-align: center;
+	width: 70%;
+	margin: 60px auto;
+}
+.securiteline{
+	order: 2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  	align-items: center;
+}
+.securitelineIMG{
+	order: 2;
+	width: 45%;
+	margin: auto;
+}
+.securitelineIMG img{
+	width:100%; 
+}     
+.securitelineP{
+	margin: auto;
+	order: 1;
+	width: 46%;
+	margin-bottom: 130px; 
+}
+.securitelineP ul{
+	margin-left: 45px;
+}
+
+/*specification*/
+.capaciteThechnique{
+	order: 1;
+	color: white;
+	text-align: center;
+	width: 70%;
+	margin: 60px auto;
+}
+.capaciteThechniqueline{
+	order: 2;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+  	align-items: center;
+}
+.capaciteThechniqueVID{
+	order: 1;
+	width: 56%;
+	margin: auto;
+
+}
+     
+.capaciteThechniqueP{
+	margin: auto;
+	order: 2;
+	width: 41%;
+	padding-left: 14px;
+}
+.divend{
+	order: 3;
+	display: flex;
+	flex-flow: row wrap;
+}
+.divend div{
+	margin:20px auto 20px auto;
+	border-left: 1px solid orange;
+	padding: 18px;
+	padding-bottom: 0;
+}
+video{
+	background-color: black;
+	 
+ }
+.endpages{
+	display: flex;
+	flex-flow: row wrap;
+}
+.endpages div{
+	display: inline-block;
+}
+
+@media screen and (max-width:700px)
+{
+	.dlogin{
+		display: none;
+	}
+}
